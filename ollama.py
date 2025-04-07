@@ -8,7 +8,7 @@ with st.form("llm-form"):
     submit = st.form_submit_button("submit")
     
 def generate_response(input_text):
-    model = ChatOllama(model="llama3.2:1b", base_url="https://ollama-chatbot-e6zna7lfz8xjzapzhvhazd.streamlit.app/")
+    model = ChatOllama(model="llama3.2:1b", base_url="http://localhost:8501")
     
     response = model.invoke(input_text)
     
