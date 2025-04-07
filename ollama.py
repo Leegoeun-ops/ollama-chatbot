@@ -32,3 +32,17 @@ json_data = {
 
 df = pd.read_csv("data/example")
 
+# import firebase_admin
+# from firebase_admin import credentials, db
+ 
+# # Initialize Firebase
+# cred = credentials.Certificate('path/to/serviceAccountKey.json')
+# firebase_admin.initialize_app(cred, {
+#     'databaseURL': 'https://your-database-url.firebaseio.com'
+# })
+ 
+# # Get a reference to the database
+# ref = db.reference('/')
+ 
+# # Read data
+# print(ref.get())
