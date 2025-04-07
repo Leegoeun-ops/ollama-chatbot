@@ -24,11 +24,4 @@ name = st.text_area("Enter your name")
 button = st.button("Click Me")
 if button:
     st.write("Clicked Btn")
-    
-json_data = {
-    "name" : "Test",
-    "age" : 30
-}
-
-df = pd.read_csv("data/example")
 
