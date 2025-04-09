@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st   
 from langchain_ollama import ChatOllama # type: ignore
 
 st.header("Hello, It's goony's chatbot test!")
@@ -8,7 +8,7 @@ with st.form("llm-form"):
     submit = st.form_submit_button("submit")
     
 def generate_response(input_text):
-    model = ChatOllama(model="llama3.2:1b", base_url="http://localhost:8501")
+    model = ChatOllama(model="llama3.2:1b")
     
     response = model.invoke(input_text)
     
